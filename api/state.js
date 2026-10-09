@@ -53,3 +53,4 @@ export default async function handler(req, res) {
   } catch {
     return res.status(502).json({ error: "Could not connect to the savings database." });
   }
+}
