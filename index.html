@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100b1d">
+  <title>Toronto Weekend Plan</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="eyebrow">THE TRIP PLAN</div>
+    <h1>Toronto <span>Weekend</span></h1>
+    <p>Our luxury weekend away · Exeter → Toronto</p>
+    <div class="hero-pills"><span>3 people</span><span>2 nights</span><span>CAD $2,550 target</span></div>
+  </header>
+
+  <main>
+    <section class="panel progress-panel">
+      <div class="section-top">
+        <div><div class="eyebrow">SAVINGS TRACKER</div><h2>We're getting there.</h2></div>
+        <div class="total" id="totalSaved">$0 <small>saved together</small></div>
+      </div>
+      <div class="progress-track"><div id="overallBar" class="progress-fill"></div></div>
+      <div class="progress-caption"><span id="overallPercent">0% saved</span><span id="remaining">$2,550 left</span></div>
+      <div class="savers">
+        <article class="saver-card">
+          <div class="saver-head"><div><span class="dot purple"></span><strong>Your savings</strong></div><span id="youPct">0%</span></div>
+          <div class="amount" id="youAmount">$0 <small>/ $1,750</small></div>
+          <div class="progress-track small"><div id="youBar" class="progress-fill"></div></div>
+          <label for="youInput">Amount saved (CAD)</label>
+          <div class="input-row"><span>$</span><input id="youInput" type="number" min="0" max="1750" step="1" placeholder="0" inputmode="decimal"><button id="saveYou">Save</button></div>
+          <p class="hint">Your target covers transport, hotel and emergency money.</p>
+        </article>
+        <article class="saver-card">
+          <div class="saver-head"><div><span class="dot pink"></span><strong>Friend's savings</strong></div><span id="friendPct">0%</span></div>
+          <div class="amount" id="friendAmount">$0 <small>/ $800</small></div>
+          <div class="progress-track small"><div id="friendBar" class="progress-fill pink-fill"></div></div>
+          <label for="friendInput">Amount saved (CAD)</label>
+          <div class="input-row"><span>$</span><input id="friendInput" type="number" min="0" max="800" step="1" placeholder="0" inputmode="decimal"><button id="saveFriend">Save</button></div>
+          <p class="hint">Their target covers food, activities and spending.</p>
+        </article>
+      </div>
+      <div class="status" id="status" role="status">Connecting to the shared tracker…</div>
+      <p class="security-note">Updates are shared online, so both of you see the same totals. Saving requires your shared trip PIN.</p>
+    </section>
+
+    <section class="panel">
+      <div class="eyebrow">THE BUDGET</div><h2>Where the money goes</h2>
+      <div class="budget-list">
+        <div class="budget-row"><div><strong>Private return limo</strong><small>Exeter ⇄ Toronto · estimate</small></div><strong>$650</strong></div>
+        <div class="budget-row"><div><strong>Hotel X Toronto</strong><small>2 nights, taxes included estimate</small></div><strong>$900</strong></div>
+        <div class="budget-row"><div><strong>Food</strong><small>Friend's budget</small></div><strong>$400</strong></div>
+        <div class="budget-row"><div><strong>Activities</strong><small>Aquarium, shopping, possible CN Tower</small></div><strong>$250</strong></div>
+        <div class="budget-row"><div><strong>Personal spending</strong><small>Souvenirs and extras</small></div><strong>$150</strong></div>
+        <div class="budget-row"><div><strong>Emergency reserve</strong><small>Your responsibility</small></div><strong>$200</strong></div>
+        <div class="budget-total"><span>Total savings target</span><strong>$2,550 CAD</strong></div>
+      </div>
+      <p class="fine-print">These are planning estimates, not confirmed prices. Get a written all-in limo quote and check hotel taxes, room occupancy and minimum check-in age before paying.</p>
+    </section>
+
+    <section class="panel">
+      <div class="eyebrow">WEEKEND ITINERARY</div><h2>The plan</h2>
+      <div class="day"><div class="day-label">FRI</div><div><h3>Arrive & settle in</h3><p>Private ride to Toronto, check in, walk along the waterfront, take photos and have dinner.</p></div></div>
+      <div class="day"><div class="day-label">SAT</div><div><h3>Explore the city</h3><p>Ripley's Aquarium, CF Toronto Eaton Centre for shopping, then a nicer dinner.</p></div></div>
+      <div class="day"><div class="day-label">SUN</div><div><h3>One last stop</h3><p>Breakfast, CN Tower if the budget allows, lunch and the ride back to Exeter.</p></div></div>
+    </section>
+
+    <section class="panel checklist-panel">
+      <div class="eyebrow">BEFORE BOOKING</div><h2>Important checks</h2>
+      <ul class="checks">
+        <li>Ask a parent/guardian to help arrange the trip.</li>
+        <li>Confirm the hotel’s age and check-in rules in writing.</li>
+        <li>Confirm the limo quote, pickup times, taxes and gratuity.</li>
+        <li>Keep emergency money separate from spending money.</li>
+      </ul>
+    </section>
+    <footer>Made for our Toronto trip · All amounts in Canadian dollars</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
