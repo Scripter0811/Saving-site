@@ -1,6 +1,6 @@
 {
   "functions": {
-    "state.js": {
+    "api/state.js": {
       "maxDuration": 10
     }
   }
